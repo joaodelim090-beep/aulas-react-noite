@@ -26,7 +26,7 @@ class Aula07 extends Component {
                 placeholder='Digite algo aqui...'
                 onChangeText={ this.pegaTexto }
             />
-            <Text style={{ color: 'red'}}>
+            <Text style={styles.texto}>
                 {this.state.textoDigitado}
             </Text>
         </View>
@@ -40,6 +40,17 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
+
+  input: {
+    borderWidth: 2,
+    padding: 15,
+    width: 300,
+    fontSize: 30,
+  },
+  texto:{
+    fontSize: 30,
+    color: 'red'
+  }
 });
 
 export default Aula07;
