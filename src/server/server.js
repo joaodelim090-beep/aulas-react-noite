@@ -11,7 +11,7 @@ const db = mysql.createConnection({
     host: 'localhost',
     user: 'root',
     password: '',
-    Database: 'aula_db'
+    database: 'aula_db'
 })
 
 db.connect( err => {
@@ -33,3 +33,14 @@ app.post('/salvar', (req, res) => {
 })
 
 app.listen(3000, () => console.log('Servidor rodando na porta 3000'));
+
+//INSTALAR OS SEGUINTES COMANDOS NODE PARA CONFIGURAÇÃO E
+//COMUNICAÇÃO COM O MYSQL:
+
+//npm install express
+
+//npm install mysql2
+
+//npm install mysql2 cors
+
+//npm install cors
